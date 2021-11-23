@@ -1,0 +1,40 @@
+<body>
+  <table>
+    <input type="text" name="input"  id="answer2" [(ngModel)]="extaxt"readonly>
+
+    <input type="text" name="input"  id="answer" [(ngModel)]="taxtr"readonly>
+    <br>
+    <input type="button"  name="clear" value=" C " #clr (click)="clean()">
+    <input type="button" name="delete" value="CE" #del (click)="cleanterm()">
+    <input type="button"  name="clearone" value=&#9587;	id="clear" #clrone (click)="delete()">
+    <input type="button" class="operator" name="mod" value="%" #mod (click)="singlesolve(mod.value)">
+    <br>
+    <input type="button"  value=" &nbsp;X&#178;" #btn (click)="singlesolve('x^2')">
+    <input type="button" name="ratio" #ratio value="1/x" (click)="singlesolve(ratio.value)" >
+    <input type="button" name="sqr" value="&#8730;" #sqr (click)="singlesolve(sqr.value)">
+    <input type="button" class="operator" name="div" value="/" #divd (click)="entrebox(divd.value)">
+
+    <br>
+    <input type="button" name="one" value="1" #one (click)="entrebox(one.value)">
+    <input type="button" name="two" value="2" #two (click)="entrebox(two.value)">
+    <input type="button" name="three" value="3" #three (click)="entrebox(three.value)">
+    <input type="button" class="operator" name="plus" value=&plus;    #plus (click)="entrebox(plus.value)">
+    <br>
+    <input type="button" name="four" value="4" #four (click)="entrebox(four.value)">
+    <input type="button" name="five" value="5" #five (click)="entrebox(five.value)">
+    <input type="button" name="six" value="6" #six (click)="entrebox(six.value)">
+    <input type="button" class="operator" name="minus" value="-" #minus (click)="entrebox(minus.value)">
+    <br>
+    <input type="button" name="seven" value="7" #seven (click)="entrebox(seven.value)">
+    <input type="button" name="eight" value="8" #eight (click)="entrebox(eight.value)">
+    <input type="button" name="nine" value="9" #nine (click)="entrebox(nine.value)">
+    <input type="button" class="operator" name="times" value="*" #time (click)="entrebox(time.value)">
+    <br>
+    <input type="button"  name="pm" value="+/-" #pm (click)="singlesolve('/-')">
+    <input type="button" name="zero" value="0" #zro (click)="entrebox(zro.value)">
+    <input type="button"  name="dot" value="." #dot (click)="entrebox(dot.value)">
+    <input type="button" name="eql" value=" = " #eql (click)="solveEquation()">
+    <br>
+    
+  </table>
+</body>
